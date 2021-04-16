@@ -1,4 +1,4 @@
-              CARRUSEL A FUTURO
+             ///////////CARRUSEL A FUTURO
               
               
               
@@ -17,14 +17,14 @@
 
 $animationSpeed: 40s;
 
-// Animation
+
 @keyframes scroll {
 	0% { transform: translateX(0); }
 	100% { transform: translateX(calc(-250px * 7))}
 }
 
 
-// Styling
+
 .slider {
 	background: white;
 	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
