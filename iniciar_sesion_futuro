@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- incorporamos las jquey y validadores -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript"
+        src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
+    <script language="javascript" type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/additional-methods.min.js"></script>
+
+</head>
+
+<body>
+    <form method="POST" id="formulario1" action="#">
+        <table border="0">
+            <tr>
+                <td><label for="id_txtEmail">Email</label></td>
+                <td><input type="email" name="txtEmail" value="" id="id_txtEmail" placeholder="Ingresa su Email aquí" />
+                </td>
+            </tr>
+            <tr>
+                <td><label>Contraseña</label></td>
+                <td><input type="text" name="txtContrasena" value="" required="" id="id_txtContrasena" />
+                </td>
+            </tr>
+            <tr>
+                <td><label>Repetir Contraseña</label></td>
+                <td><input type="text" name="txtRepetirContrasena" value="" required="" id="id_txtRepetirContrasena" />
+                </td>
+            </tr>
+            </tbody>
+        </table><br>
+        <input type="submit" value="Enviar" name="btnGuardar" />
+    </form>
+
+        <!-- incorporamos nuestro javascript con las reglas que deseamos aplicar -->
+        <script src="js/validador.js" type="text/javascript"></script>
+
+</body>
+</html>
