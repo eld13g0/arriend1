@@ -29,113 +29,148 @@
 
     <main>
         <h2>Modelos de las casas</h2>
-        <h2>Casa Mañke</h2>
-        <div class="contenedor-arriendos">
-            <div class="img">
-                <img src="img/casafueranueva.jpg" alt="">
-            </div>
-            <div class="contenido-arriendo">
-                <h3>Casa Mañke</h3>
-                <hr>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')">Mañke</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Lame</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Yene</button>
+        </div>
 
-                <p>Una casa cómoda, acogedora y ampliable se une a las especies que viven en Pewen. Al igual que las
-                    casas Lame y Yene gracias a su arquitectura y vista, la casa Mañke tiene espacios para que tu
-                    familia disfrute cada momento de forma magnífica. Disfruta de tu casa y del entorno creado por
-                    PewenArriendos.</p>
+        <!-- Tab content -->
+        <div id="London" class="tabcontent">
+            <div class="manke">
+                <div class="contenedor-arriendos">
+                    <div class="img">
+                        <img src="img/casafueranueva.jpg" alt="">
+                    </div>
+                    <div class="contenido-arriendo">
+                        <h3>Casa Mañke</h3>
+                        <hr>
 
-                    <a href="casamanke.html" class="btn">Ver mas</a>
+                        <p>Una casa cómoda, acogedora y ampliable se une a las especies que viven en Pewen. Al igual
+                            que
+                            las
+                            casas Lame y Yene gracias a su arquitectura y vista, la casa Mañke tiene espacios para
+                            que
+                            tu
+                            familia disfrute cada momento de forma magnífica. Disfruta de tu casa y del entorno
+                            creado
+                            por
+                            PewenArriendos.</p>
+
+                        <a href="casamanke.html" class="btn">Ver mas</a>
+                    </div>
+                </div>
+                <h3>Plano</h3>
+                <div class="contenedor-planos">
+
+                    <div class="img">
+                        <img src="img/plano1piso1.jpg" alt="">
+                    </div>
+
+                    <div class="lista">
+                        <ul>
+                            <li>Superficie Piso 1: 120.29 m2</li>
+                            <li>Superficie Piso 2: 49.09m2</li>
+                            <li>Total Casa: 170.19 m2</li>
+                            <li>Ampliación: 19.04 m2.</li>
+                            <li>Casa total ampliada: 189.23 m2</li>
+                        </ul>
+
+                    </div>
+                </div>
             </div>
         </div>
-        <h3>Plano</h3>
-        <div class="contenedor-planos">
 
-            <div class="img">
-                <img src="img/plano1piso1.jpg" alt="">
-            </div>
+        <div id="Paris" class="tabcontent">
+            <div class="contenedor-arriendos">
+                <div class="img">
+                    <img src="img/casa2.jpg" alt="">
+                </div>
+                <div class="contenido-arriendo">
+                    <h3>Casa Lame</h3>
+                    <hr>
 
-            <div class="lista">
-                <ul>
-                    <li>Superficie Piso 1: 120.29 m2</li>
-                    <li>Superficie Piso 2: 49.09m2</li>
-                    <li>Total Casa: 170.19 m2</li>
-                    <li>Ampliación: 19.04 m2.</li>
-                    <li>Casa total ampliada: 189.23 m2</li>
-                </ul>
-
-            </div>
-        </div>
-        <hr>
-        <h2>Casa Lame</h2>
-        <div class="contenedor-arriendos">
-            <div class="img">
-                <img src="img/casa2.jpg" alt="">
-            </div>
-            <div class="contenido-arriendo">
-                <h3>Casa Lame</h3>
-                <hr>
-
-                <p>Porque sabemos que todos los espacios de tu casa son importantes, diseñamos cada metro cuadrado con
-                    toda la funcionalidad y flexibilidad para que puedas vivir cada momento como tú y tu familia se lo
-                    merecen. Siéntete tranquilo y cómodo, siente cada rincón de PewenArriendos.</p>
+                    <p>Porque sabemos que todos los espacios de tu casa son importantes, diseñamos cada metro
+                        cuadrado
+                        con
+                        toda la funcionalidad y flexibilidad para que puedas vivir cada momento como tú y tu familia
+                        se
+                        lo
+                        merecen. Siéntete tranquilo y cómodo, siente cada rincón de PewenArriendos.</p>
                     <a href="casalame.html" class="btn">Ver mas</a>
+                </div>
             </div>
+            <h3>Planos</h3>
+            <div class="contenedor-planos">
+
+                <div class="img">
+                    <img src="img/plano1piso1.jpg" alt="">
+                </div>
+
+                <div class="lista">
+                    <ul>
+                        <li>SUPERFICIE PISO 1: 141.29 m2</li>
+                        <li> SUPERFICIE PISO 2: 55.32 m2</li>
+                        <li>TOTAL CASA: 196.61 m2</li>
+                        <li>AMPLIACIÓN: 21.24 m2</li>
+                        <li>CASA TOTAL AMPLIADA: 217.85 m2</li>
+                    </ul>
+
+                </div>
+            </div>
+            <hr>
         </div>
-        <h3>Planos</h3>
-        <div class="contenedor-planos">
 
-            <div class="img">
-                <img src="img/plano1piso1.jpg" alt="">
-            </div>
+        <div id="Tokyo" class="tabcontent">
+            <div class="contenedor-arriendos">
+                <div class="img">
+                    <img src="img/casa3.jpg" alt="">
+                </div>
+                <div class="contenido-arriendo">
+                    <h3>Casa Yene</h3>
+                    <hr>
 
-            <div class="lista">
-                <ul>
-                    <li>SUPERFICIE PISO 1: 141.29 m2</li>
-                    <li> SUPERFICIE PISO 2: 55.32 m2</li>
-                    <li>TOTAL CASA: 196.61 m2</li>
-                    <li>AMPLIACIÓN: 21.24 m2</li>
-                    <li>CASA TOTAL AMPLIADA: 217.85 m2</li>
-                </ul>
-
-            </div>
-        </div>
-        <hr>
-        <h2>Casa Yene</h2>
-        <div class="contenedor-arriendos">
-            <div class="img">
-                <img src="img/casa3.jpg" alt="">
-            </div>
-            <div class="contenido-arriendo">
-                <h3>Casa Yene</h3>
-                <hr>
-
-                <p>Tu vida todos los días puede tener una nueva perspectiva. Solo debes disfrutar la flexibilidad e
-                    integración de espacios que ofrece PewenArriendos en cada rincón de tu casa. Redescubre tus
-                    ambientes sin límites o reinvéntalos como a ti te gusta en cada uno de sus pisos, porque cada
-                    espacio está a la altura de tus nuevas expectativas.</p>
+                    <p>Tu vida todos los días puede tener una nueva perspectiva. Solo debes disfrutar la
+                        flexibilidad e
+                        integración de espacios que ofrece PewenArriendos en cada rincón de tu casa. Redescubre tus
+                        ambientes sin límites o reinvéntalos como a ti te gusta en cada uno de sus pisos, porque
+                        cada
+                        espacio está a la altura de tus nuevas expectativas.</p>
                     <a href="casayene.html" class="btn">Ver mas</a>
+                </div>
+            </div>
+            <h3>Planos</h3>
+            <div class="contenedor-planos">
+
+                <div class="img">
+                    <img src="img/plano1piso1.jpg" alt="">
+                </div>
+
+                <div class="lista">
+                    <ul>
+                        <li>SUPERFICIE PISO 1: 158.58 m2</li>
+                        <li>SUPERFICIE PISO 2: 86.32m2</li>
+                        <li>TOTAL CASA: 244.9 m2</li>
+                        <li>AMPLIACIÓN: 14.73 m2.</li>
+                        <li>CASA TOTAL AMPLIADA: 259.63 m2</li>
+                    </ul>
+
+                </div>
             </div>
         </div>
-        <h3>Planos</h3>
-        <div class="contenedor-planos">
 
-            <div class="img">
-                <img src="img/plano1piso1.jpg" alt="">
-            </div>
 
-            <div class="lista">
-                <ul>
-                    <li>SUPERFICIE PISO 1: 158.58 m2</li>
-                    <li>SUPERFICIE PISO 2: 86.32m2</li>
-                    <li>TOTAL CASA: 244.9 m2</li>
-                    <li>AMPLIACIÓN: 14.73 m2.</li>
-                    <li>CASA TOTAL AMPLIADA: 259.63 m2</li>
-                </ul>
-
-            </div>
-        </div>
-        <hr>
     </main>
+    
 
+ <!-- Api UF / EstiloAPI -->
+
+    <div class="estilo_api">
+       <p id="api"></p>
+
+
+
+    </div>
 
     <footer>
         <div class="contenedor-footer">
@@ -151,7 +186,18 @@
         </div>
 
     </footer>
-    <script src="https://kit.fontawesome.com/9b698c7802.js" crossorigin="anonymous"></script>
+
+
+    <!-- Scrollreveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- Main.js -->
+
+    <script src="main.js"></script>
 </body>
 
 </html>
